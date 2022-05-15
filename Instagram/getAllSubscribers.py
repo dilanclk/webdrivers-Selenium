@@ -54,8 +54,8 @@ followers = browser.find_elements_by_css_selector(".FPmhX.notranslate._0imsa")
 for follower in followers:
     followersList.append(follower.text)
 
-with open("followers.txt","w",encoding="UTF-8") as file:
+with open("followers.txt","w",encoding="UTF-8") as f:
     for follower in followersList:
-        file.write(follower + "\n")
+        f.write(follower + "\n")
 
 browser.close()
