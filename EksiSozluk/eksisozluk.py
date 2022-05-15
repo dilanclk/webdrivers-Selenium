@@ -24,7 +24,7 @@ while pageCount <= 10:
 with open("entries.txt","w",encoding= "UTF_8") as file:
     for entry in entries:
         file.write(str(entryCount) + ".\n" + entry +"\n")
-        file.write("*********************************\n")
+        file.write("*******************************\n")
         entryCount += 1
 
 browser.close()
