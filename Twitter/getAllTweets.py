@@ -62,7 +62,7 @@ tweetCount = 1
 with open("tweets.txt","w",encoding = "UTF-8") as file:
     for tweet in tweets:
         file.write(str(tweetCount) + ".\n" + tweet + "\n")
-        file.write("**************************\n")
+        file.write("************************\n")
         tweetCount += 1
 
 
